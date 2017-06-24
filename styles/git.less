@@ -15,6 +15,43 @@
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 21px;
 }
+
 .github-FilePatchListView-item {
   padding-left: 10px;
+  height: 28px;
+  line-height: 17px;
+}
+
+.github-FilePatchView {
+  .icon-move-down::before {
+    margin: 0;
+  }
+}
+
+.github-FilePatchListView-icon::before {
+  margin-top: 1px;
+}
+
+atom-text-editor {
+  .gutter .line-number {
+    &.git-line-modified {
+      border-left: 1px solid @syntax-color-modified;
+    }
+
+    &.git-line-added {
+      border-left: 1px solid @syntax-color-added;
+    }
+
+  }
+}
+.github-StatusBarTileController-tooltipMenu {
+  .tooltip-inner {
+    border-radius: 4px !important;
+  }
+}
+
+.github-CommitView {
+  .scroll-view {
+    padding: 0 3px !important;
+  }
 }

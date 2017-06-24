@@ -11,6 +11,7 @@
 
 .icon-file-text:before { .file-icon(default) }
 .project-root-header .icon-file-directory:before { .file-icon(folder)}
+.project-root-header .icon-repo:before { .file-icon(folder)}
 .icon-file-directory:before { .file-icon(default_folder) }
 
 .fuzzy-finder .list-group,
@@ -204,5 +205,6 @@
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	.expanded .project-root-header .icon-file-directory:before { .file-icon(folder_opened) }
+	.expanded .project-root-header .icon-repo:before { .file-icon(folder_opened) }
 	.expanded > div > .icon-file-directory:before { .file-icon(default_folder_opened) }
 }

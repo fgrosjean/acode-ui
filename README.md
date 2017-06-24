@@ -1,42 +1,15 @@
-## One Light UI theme [![Build Status](https://travis-ci.org/atom/one-light-ui.svg?branch=master)](https://travis-ci.org/atom/one-light-ui)
+![Acode intro](https://raw.githubusercontent.com/fgrosjean/acode-ui/master/assets/icon.jpg)
+# Xcode inspired theme for Atom.
 
-A light UI theme that adapts to most syntax themes.
+Acode brings the native look and feel and the easy-to-use visual language of macOS to Atom.
+This UI theme adheres the closest it can to the current [Apple Human Interface guidelines](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/), a major redesign of the entire Atom interface that gives you a more polished and improved experience.
+It has support for high-resolution displays (retina), a color scheme, native tab behavior, a custom set of file type icons... and a lot more!
 
-![One light UI](https://cloud.githubusercontent.com/assets/378023/26246819/0826f04e-3cd6-11e7-98eb-cd94bc48b090.png)
+![Acode UI](https://raw.githubusercontent.com/fgrosjean/acode-ui/master/assets/screenshot.jpg)
+> The font used in the screenshot is [San Francisco Mono](https://developer.apple.com/fonts).
 
-> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).
+## How To Install
 
-
-### Install
-
-This theme comes bundled with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Light" from the __UI Themes__ drop-down menu.
-
-
-### Settings
-
-In the theme settings you can:
-
-- Change the __Font Size__ to scale the whole UI up or down.
-- Choose between 3 __Tab Sizing__ modes.
-- Hide the  __dock buttons__.
-
-To make changes, go to `Settings > Themes > One Light UI > Settings` or the cog icon next to the theme picker.
-
-
-### Customize
-
-It's also possible to resize only certain areas by adding the following to your `styles.less` (Use DevTools to find the right selectors):
-
-```css
-.theme-one-light-ui {
-  .tab-bar { font-size: 18px; }
-  .tree-view { font-size: 14px; }
-  .status-bar { font-size: 12px; }
-}
-```
-
-
-### FAQ
-
-__Why do the colors change when I switch Syntax themes.__
-This UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a dark background color, it only uses its hue, but otherwise stays light. This lets you use light-dark combos.
+Terminal | Atom
+--- | ---
+If you have the Atom Package Manager installed you can run `apm install acode-ui` | Go to `Settings → Install`, switch the tab from `Packages` to `Themes` and search for **acode-ui**. After that select the theme **Acode** in `Settings → Themes`.
