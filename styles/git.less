@@ -1,0 +1,20 @@
+.status { .text(normal); }
+.status-added    { .text(success); } // green
+.status-ignored  { .text(subtle); }  // faded
+.status-modified { .text(warning); } // orange
+.status-removed  { .text(error); }   // red
+.status-renamed  { .text(info); }    // blue
+
+.icon-list-unordered::before, .icon-tasklist::before {
+  margin-top: -2px;
+}
+.icon-move-down::before {
+  margin-top: 4px;
+}
+.is-selected {
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 21px;
+}
+.github-FilePatchListView-item {
+  padding-left: 10px;
+}

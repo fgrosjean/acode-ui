@@ -1,0 +1,173 @@
+
+// Settings
+
+// Modular Scale (1.125): http://www.modularscale.com/?1&em&1.125&web&table
+@ms-6: @ui-size * 2.027;
+@ms-5: @ui-size * 1.802;
+@ms-4: @ui-size * 1.602;
+@ms-3: @ui-size * 1.424;
+@ms-2: @ui-size * 1.266;
+@ms-1: @ui-size * 1.125;
+@ms-0: @ui-size * 1;
+@ms_1: @ui-size * 0.889;
+@ms_2: @ui-size * 0.790;
+
+.settings-view div > section.section.settings-panel {
+	border-top: 0;
+}
+
+.settings-view {
+
+	// Menu ------------------------------
+
+	.config-menu {
+		position: relative;
+		min-width: @ui-size * 15;
+		max-width: @ui-size * 20;
+		border-width: 0 1px 0 0;
+		background: @level-2-color;
+		padding: 0;
+
+		.icon::before {
+			vertical-align: -2px;
+			margin-right: 17px;
+		}
+		.active {
+			-webkit-font-smoothing: subpixel-antialiased;
+		}
+		.active .icon::before {
+			color: #fff !important;
+		}
+
+		.btn {
+			white-space: initial;
+			font-size: @ms_1;
+			line-height: 1;
+			padding: @ui-padding/3 @ui-padding/2;
+			&::before {
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+
+
+	}
+	.nav {
+		& > li > a {
+			padding: @ui-padding/2 @ui-padding;
+			line-height: @ui-line-height;
+			border-bottom: 1px solid #DADADA;
+		}
+	}
+
+
+	// Sections ------------------------------
+
+	& > .panels {
+		background-color: @level-2-color;
+	}
+
+	.section-container {
+		max-width: @ui-size*60;
+	}
+	.sub-section {
+		margin: @ui-padding*3 0;
+	}
+
+	.section,
+	.section:first-child,
+	.section:last-child {
+		padding: @ui-padding*3;
+	}
+
+	.themes-panel .control-group {
+		margin-top: @ui-padding*2;
+	}
+
+	.control-group {
+		border-top: 1px solid #DADADA;
+		padding-top: 7px;
+	}
+
+
+	// Titles ------------------------------
+
+	.section .section-heading {
+		margin-bottom: @ui-padding/1.5;
+	}
+
+	.sub-section-heading.icon:before,
+	.section-heading.icon:before {
+		margin-right: @ui-padding-icon;
+	}
+
+	.control-label .setting-title {
+		margin-top: 5px;
+	}
+
+	.keybinding-panel table {
+		td {
+			border-color: #DADADA !important;
+		}
+	}
+
+
+
+	// Cards ------------------------------
+
+	.package-card {
+		padding: @ui-padding;
+		.body {
+			border-bottom: 1px solid #DADADA;
+			padding-bottom: 5px;
+		}
+		.card-name {
+			border-bottom: 1px solid #DADADA;
+			padding-bottom: 3px;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		.icon {
+			border-radius: 5px !important;
+			margin-left: 5px;
+		}
+		.icon-playback-pause::before, .icon-playback-play::before {
+			margin-top: -2px;
+		}
+		.meta-controls .status-indicator {
+			width: @ui-padding/4;
+			display: none;
+		}
+	}
+
+
+	// Components ------------------------------
+
+	.icon::before {
+		color: @text-color-subtle;
+	}
+
+	.editor-container {
+		margin: @ui-padding 0;
+	}
+
+	.form-control {
+		font-size: @ui-size*1.25;
+		height: @ui-line-height;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.update-all-button {
+		font-size: .75em;
+	}
+
+	.install-button {
+		.btn-variant(@accent-bg-color);
+	}
+
+	.search-container .btn {
+		font-size: @ui-input-size;
+	}
+
+}

@@ -1,0 +1,38 @@
+.tooltip {
+  white-space: nowrap;
+  font-size: @ui-size;
+  letter-spacing: @ui-size*0.03;
+
+  &.in {
+    opacity: 1;
+    transition: opacity .12s ease-out;
+  }
+
+  .tooltip-inner {
+    line-height: 1.1;
+    padding: @ui-padding*.4 @ui-padding*0.7;
+    border-radius: @component-border-radius * 10;
+    background-color: @tooltip-background-color;
+    color: @tooltip-text-color;
+    white-space: nowrap;
+    max-width: none;
+  }
+
+  .keystroke {
+    font-size: max(0em, @ui-size*.85);
+    padding: .1em .4em;
+    margin: 0 @ui-padding*-.35 0 @ui-padding*.25 0;
+    border-radius: max(2px, @component-border-radius / 2);
+    color: @tooltip-text-key-color;
+    background: @tooltip-background-key-color;
+  }
+
+  &.left {
+    .tooltip-arrow {
+      right: 2px;
+      top: 52% !important;
+      transform: scale(2);
+    }
+  }
+
+}

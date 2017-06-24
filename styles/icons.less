@@ -1,0 +1,208 @@
+
+.file-icon(@filename) {
+	content: "";
+	height: 16px !important;
+	width: 16px !important;
+	vertical-align: -5px !important;
+	// border: 1px solid red;
+	background: url("atom://acode-ui/assets/icons/@{filename}.svg") center center no-repeat !important;
+	background-size: contain !important;
+}
+
+.icon-file-text:before { .file-icon(default) }
+.project-root-header .icon-file-directory:before { .file-icon(folder)}
+.icon-file-directory:before { .file-icon(default_folder) }
+
+.fuzzy-finder .list-group,
+.tree-view .file {
+
+[data-name$=".env"]:before { .file-icon(settings);}
+
+[data-name$=".yml"]:before,
+[data-name$=".yaml"]:before { .file-icon(yaml); }
+
+[data-name$=".xml"]:before,
+[data-name$=".htm"]:before,
+[data-name$=".html"]:before { .file-icon(html); }
+
+[data-name$=".es"]:before,
+[data-name$=".es6"]:before,
+[data-name$=".js"]:before { .file-icon(js); }
+
+[data-name$=".css"]:before { .file-icon(css); }
+[data-name$=".jsx"]:before { .file-icon(rust); }
+[data-name$=".vue"]:before { .file-icon(vue); }
+[data-name$=".json"]:before,
+[data-name$=".json5"]:before { .file-icon(json); }
+
+[data-name^=".gitattributes"]:before,
+[data-name^=".gitconfig"]:before,
+[data-name^=".gitignore"]:before, [data-name^=".gitkeep"]:before,
+[data-name^=".gitmodules"]:before { .file-icon(git); }
+
+[data-name$=".php"]:before { .file-icon(php); }
+[data-name$=".py"]:before,
+[data-name="requirements.txt"]:before { .file-icon(python); }
+[data-name$=".cs"]:before { .file-icon(c); }
+[data-name$=".csproj"]:before { .file-icon(c); }
+[data-name$=".less"]:before { .file-icon(less); }
+[data-name$=".sass"]:before,
+[data-name$=".scss"]:before { .file-icon(css); }
+
+.title.icon-markdown:before,
+[data-name$=".markdown"]:before,
+[data-name$=".mdown"]:before,
+[data-name$=".mkd"]:before,
+[data-name$=".mkdown"]:before,
+[data-name*=".md"]:before { .file-icon(markdown); }
+
+[data-name$=".gif"]:before,
+[data-name$=".jpg"]:before,
+[data-name$=".svg"]:before,
+[data-name$=".ico"]:before,
+[data-name$=".png"]:before { .file-icon(image); }
+
+[data-name$=".bbnsh"]:before,
+[data-name$=".bbnsi"]:before,
+[data-name$=".nsh"]:before,
+[data-name$=".nsi"]:before { .file-icon(tex); }
+
+[data-name$=".rspec"]:before { .file-icon(r); }
+[data-name$=".erb"]:before { .file-icon(text); }
+
+[data-name$=".eot"]:before,
+[data-name$=".ttf"]:before,
+[data-name$=".woff"]:before,
+[data-name$=".woff2"]:before { .file-icon(fonts); }
+
+[data-name$=".rb"]:before,
+[data-name$=".ru"]:before,
+[data-name^="Appraisals"]:before,
+[data-name^="Berksfile"]:before,
+[data-name^="Capfile"]:before,
+[data-name^="Dangerfile"]:before,
+[data-name^="Deliverfile"]:before,
+[data-name^="Fastfile"]:before,
+[data-name^="Gemfile"]:before,
+[data-name^="Guardfile"]:before,
+[data-name^="Jarfile"]:before,
+[data-name^="Mavenfile"]:before,
+[data-name^="Podfile"]:before,
+[data-name^="Puppetfile"]:before,
+[data-name^="Rakefile"]:before,
+[data-name^="Snapfile"]:before { .file-icon(ruby); }
+
+[data-name$=".rubocop.yml"]:before { .file-icon(yaml); }
+[data-name^=".bootstraprc"]:before { .file-icon(css); }
+[data-name^="webpack.config"]:before { .file-icon(shell); }
+[data-name$=".hbs"]:before { .file-icon(mustache); }
+[data-name$=".handlebars"]:before { .file-icon(mustache); }
+[data-name$=".mustache"]:before { .file-icon(mustache); }
+[data-name$=".styl"]:before { .file-icon(stylus); }
+[data-name$=".babelrc"]:before { .file-icon(strata); }
+[data-name$=".sql"]:before { .file-icon(sql); }
+[data-name$=".twig"]:before { .file-icon(twig); }
+[data-name$=".ts"]:before { .file-icon(typescript); }
+
+[data-name$=".psd"]:before { .file-icon(psd); }
+[data-name$=".ai"]:before { .file-icon(ai); }
+[data-name$=".fla"]:before,
+[data-name$=".as"]:before { .file-icon(actionscript); }
+
+[data-name$=".cjsx"]:before,
+[data-name$=".coffee"]:before,
+[data-name$=".cson"]:before { .file-icon(coffee); }
+
+[data-name$=".zip"]:before,
+[data-name$=".rar"]:before { .file-icon(archive); }
+
+[data-name$="Vagrantfile"]:before { .file-icon(shell); }
+[data-name$=".pp"]:before { .file-icon(puppet); }
+[data-name$="kitchen.yml"]:before { .file-icon(yaml); }
+[data-name$=".bash_profile"]:before, [data-name$=".bashrc"]:before, [data-name$=".sh"]:before { .file-icon(shell); }
+[data-name$=".sls"]:before { .file-icon(note); }
+[data-name^=".dockerignore"]:before, [data-name^="Dockerfile"]:before { .file-icon(docker); }
+[data-name$=".haml"]:before { .file-icon(haml); }
+[data-name$=".jade"]:before { .file-icon(jade); }
+[data-name$=".pug"]:before { .file-icon(sql); }
+[data-name$=".editorconfig"]:before { .file-icon(settings); }
+[data-name$=".java"]:before { .file-icon(java); }
+[data-name$=".jar"]:before { .file-icon(java); }
+[data-name$=".go"]:before { .file-icon(go); }
+[data-name$=".pl"]:before { .file-icon(perl); }
+
+[data-name$=".nodemonignore"]:before,
+[data-name$="nodemon.json"]:before { .file-icon(npm); }
+
+[data-name$=".postcss"]:before,
+[data-name$=".sss"]:before { .file-icon(postcss); }
+
+[data-name$=".txt"]:before { .file-icon(text); }
+[data-name$=".dart"]:before { .file-icon(dlang); }
+[data-name$=".erl"]:before { .file-icon(erlang); }
+[data-name$=".clj"]:before { .file-icon(clojure); }
+[data-name$=".cljs"]:before { .file-icon(clojure); }
+[data-name="ionic.project"]:before { .file-icon(r); }
+[data-name$=".hx"]:before,
+[data-name$=".hxml"]:before,
+[data-name$=".hxsl"]:before { .file-icon(puppet); }
+[data-name$=".lua"]:before { .file-icon(lua); }
+[data-name$=".hs"]:before { .file-icon(haskel); }
+[data-name$=".deb"]:before { .file-icon(binary); }
+[data-name^="shipitfile"][data-name$=".js"]:before { .file-icon(binary); }
+[data-name^=".travis"]:before { .file-icon(binary); }
+[data-name^=".gitlab"]:before { .file-icon(git); }
+[data-name="circle.yml"]:before { .file-icon(clojure); }
+[data-name="karma.conf"]:before { .file-icon(binary); }
+[data-name="jasmine.json"]:before { .file-icon(binary); }
+
+[data-name^=".eslintignore"]:before,
+[data-name^=".eslintrc"]:before { .file-icon(js); }
+
+[data-name="httpd.conf"]:before,
+[data-name^=".htaccess"]:before,
+[data-name^=".htpasswd"]:before,
+[data-name^="apache"][data-name$=".conf"]:before { .file-icon(default); }
+
+[data-name$=".rlib"]:before,
+[data-name$=".rs"]:before { .file-icon(rust); }
+
+[data-name$=".scala"]:before { .file-icon(scala); }
+
+[data-name=".npmignore"]:before,
+[data-name=".npmrc"]:before,
+[data-name="npm-debug.log"]:before,
+[data-name="package.json"]:before { .file-icon(npm); }
+
+[data-name="yarn.lock"]:before { .file-icon(npm); }
+
+[data-name$=".bowerrc"]:before,
+[data-name="bower.json"]:before { .file-icon(note); }
+
+[data-name="composer.json"]:before,
+[data-name="composer.lock"]:before { .file-icon(shell); }
+
+[data-name^="Gruntfile"]:before,
+[data-name^="gruntfile"]:before { .file-icon(gruntfile); }
+
+[data-name^="Gulpfile"]:before,
+[data-name^="gulpfile"]:before { .file-icon(gulp); }
+
+[data-name$=".pdf"]:before { .file-icon(pdf); }
+[data-name$=".sequelizerc"]:before { .file-icon(binary); }
+[data-name^="brunch-config"]:before { .file-icon(binary); }
+
+[data-name$=".elm"]:before { .file-icon(erlang); }
+[data-name$=".swift"]:before { .file-icon(swift); }
+[data-name="Procfile"]:before { .file-icon(sql); }
+
+[data-name$=".applescript"]:before,
+[data-name$=".scpt"]:before,
+[data-name$=".scptd"]:before { .file-icon(applescript); } }
+
+.tree-view {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	.expanded .project-root-header .icon-file-directory:before { .file-icon(folder_opened) }
+	.expanded > div > .icon-file-directory:before { .file-icon(default_folder_opened) }
+}

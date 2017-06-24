@@ -1,0 +1,77 @@
+
+//
+// Label
+// -------------------------
+.input-label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 0;
+}
+
+//
+// Radio
+// -------------------------
+.input-radio, .input-checkbox  {
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.20);
+  box-shadow: inset 0 1px 3px 0px rgba(0,0,0,0.2);
+  &:checked {
+    border: 0;
+    box-shadow: none;
+    background-color: #027AFA;
+  }
+}
+
+
+//
+// Range (Slider)
+// -------------------------
+.input-range {
+  background: rgba(0,0,0,0.20);
+  border-radius: 2px;
+  height: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.10), 0 1px 1px 0 rgba(0,0,0,0.25);
+}
+
+
+//
+// Toggle
+// -------------------------
+.input-toggle {
+  height: 32px;
+  width: 51px;
+  margin: 0;
+  background: #E6E6E6;
+  &::before {
+    height: 27px;
+    width: 27px;
+    top: 2px;
+    left: 2px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.30);
+  }
+  &:checked {
+    background-color: #027AFA;
+    &::before {
+      transform: translateX(calc(100% - 25px));
+    }
+  }
+}
+
+
+// States -------------------------
+.input-text,
+.input-search,
+.input-number,
+.input-textarea,
+.input-select,
+.input-color {
+  &:focus {
+    .focus();
+  }
+}

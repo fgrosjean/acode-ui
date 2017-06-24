@@ -1,0 +1,106 @@
+
+@import "ui-variables-custom.less";
+
+// Acode UI variables
+// ----------------------------------------------
+
+// Text -----------------
+@text-color:            @ui-fg;
+@text-color-subtle:     #8E908F;
+@text-color-highlight:  @text-color;
+@text-color-selected:   #F3F0FA;
+
+@text-color-info:    #007AFF;
+@text-color-success: #04931c;
+@text-color-warning: #FF9500;
+@text-color-error:   #FF3B30;
+
+
+// Background -----------------
+@background-color-info:    #007AFF;
+@background-color-success: #46c25b;
+@background-color-warning: #FF9500;
+@background-color-error:   #FF3B30;
+
+@background-color-highlight: #D1D1D1;
+@background-color-selected:  #1880EF;
+
+@app-background-color: @ui-bg;
+
+
+// Base -----------------
+@base-background-color: @ui-bg;
+@base-border-color:     @ui-border;
+
+
+// Components -----------------
+@pane-item-background-color:       @base-background-color;
+@pane-item-border-color:           @base-border-color;
+
+@input-background-color:           @ui-bg;
+@input-border-color:               @base-border-color;
+
+@tool-panel-background-color:      @ui-bg;
+@tool-panel-border-color:          @base-border-color;
+
+@inset-panel-background-color:     @ui-bg;
+@inset-panel-border-color:         @base-border-color;
+
+@panel-heading-background-color:   @ui-bg;
+@panel-heading-border-color:       @base-border-color;
+
+@overlay-background-color:         @ui-bg;
+@overlay-border-color:             @base-border-color;
+
+@button-background-color:          @ui-bg;
+@button-background-color-hover:    darken(@button-background-color, 4%);
+@button-background-color-selected: @accent-bg-color;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:         @ui-tabDark;
+@tab-bar-border-color:             @ui-border;
+@tab-background-color:             @ui-tabDark;
+@tab-background-color-active:      @ui-bg;
+@tab-border-color:                 @ui-border;
+
+@tree-view-background-color:       @ui-grey;
+@tree-view-border-color:           @ui-border;
+
+@ui-site-color-1: #007AFF; // blue
+@ui-site-color-2: #4CD964; // green
+@ui-site-color-3: #FF9500; // orange
+@ui-site-color-4: #FF2D55; // pink
+@ui-site-color-5: #FFCC00; // yellow
+
+
+// Sizes -----------------
+@font-size:               11px;
+@input-font-size:         11px;
+@disclosure-arrow-size:   12px;
+
+@component-padding:       10px;
+@component-icon-padding:  5px;
+@component-icon-size:     16px;
+@component-line-height:   25px;
+@component-border-radius: 4px;
+
+@tab-height:              27px;
+
+
+// Font -----------------
+@font-family: 'SF UI Text', sans-serif;
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('atom://acode-ui/assets/fonts/SFUIText-Light.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('atom://acode-ui/assets/fonts/SFUIText-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('atom://acode-ui/assets/fonts/SFUIDisplay-Heavy.ttf');
+    font-weight: 800;
+}
