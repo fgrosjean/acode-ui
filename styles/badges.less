@@ -1,21 +1,21 @@
 .badge {
-  color: #F3F0F9 !important;
-  -webkit-font-smoothing: subpixel-antialiased;
-  padding: 10px 9px !important;
-  min-width: @ui-padding*1.7 !important;
-  .text(highlight);
-  border-radius: @ui-size*2;
-  background-color: @badge-background-color;
+    color:                  #F3F0F9 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    padding:                10px 9px !important;
+    min-width:              @ui-padding*1.7 !important;
+    .text(highlight);
+    border-radius:          @ui-size*2;
+    background-color:       @badge-background-color;
 
-  // Icon ----------------------
-  &.icon {
-    font-size: @ui-size;
-    display: inline;
-    &::before {
-      position: relative;
-      top: 2px;
-      left: -2px;
+
+    // Icon ----------------------
+    &.icon {
+        font-size: @ui-size;
+        display:   inline;
+        &::before {
+            position: relative;
+            top:      2px;
+            left:     -2px;
+        }
     }
-  }
-
 }

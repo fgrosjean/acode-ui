@@ -1,24 +1,24 @@
 @tree-view-height: 20px;
 
 .tree-view {
-  font-size: 11px;
-  background: @tree-view-background-color;
-  overflow: hidden;
-  overflow-y: scroll;
+    font-size:  11px;
+    background: @tree-view-background-color;
+    overflow:   hidden;
+    overflow-y: scroll;
 
-  .project-root.project-root {
-    &:before {
-      height: @ui-tab-height;
-      background-clip: padding-box;
+    .project-root.project-root {
+        &:before {
+            height:          @ui-tab-height;
+            background-clip: padding-box;
+        }
     }
-  }
 
-  .selected:before {
-    width: 300%;
-    left: -200px;
-    background: @accent-color;
-    height: @ui-tab-height;
-  }
+    .selected:before {
+        width:      300%;
+        left:       -200px;
+        background: @accent-color;
+        height:     @ui-tab-height;
+    }
 }
 
 .tree-view .project-root.project-root:before {height: 20px;}
@@ -28,8 +28,8 @@
 .selected { color: #F3F0F9 !important; -webkit-font-smoothing: subpixel-antialiased; }
 
 .theme-one-dark-ui .tree-view .project-root.project-root::before {
-  border-top: 1px solid transparent;
-  background-clip: padding-box;
+    border-top:      1px solid transparent;
+    background-clip: padding-box;
 }
 
 .tree-view-resizer { .tree-view-resize-handle { width: 8px; } }
@@ -47,14 +47,14 @@
 // icon
 .list-group .icon,
 .list-tree .icon {
-  display: inline-block;
-  height: inherit;
-  &::before {
-    top: initial;
-    line-height: inherit;
-    height: inherit;
-    vertical-align: top;
-  }
+    display: inline-block;
+    height:  inherit;
+    &::before {
+        top:            initial;
+        line-height:    inherit;
+        height:         inherit;
+        vertical-align: top;
+    }
 }
 .list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
 .list-tree.has-collapsable-children .list-nested-item > .list-group > li { padding-left: 21px; }
@@ -64,30 +64,30 @@
 .tree-view .list-tree > li { position: relative; }
 
 .tree-view ol li ol li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: @tree-view-height;
-  width: 300%;
-  left: -200px;
-  z-index: -1;
+    content:  "";
+    position: absolute;
+    top:      0;
+    height:   @tree-view-height;
+    width:    300%;
+    left:     -200px;
+    z-index:  -1;
 }
 
 .tree-view ol li ol {
-  li:nth-child(odd)::after {background-color: #EBEBEB}
-  li:nth-child(odd) .list-tree li:nth-child(odd)::after {background-color: transparent}
-  li:nth-child(odd) .list-tree li:nth-child(even)::after {background-color: #EBEBEB}
+    li:nth-child(odd)::after {background-color: #EBEBEB}
+    li:nth-child(odd) .list-tree li:nth-child(odd)::after {background-color: transparent}
+    li:nth-child(odd) .list-tree li:nth-child(even)::after {background-color: #EBEBEB}
 }
 
 
 // Triangle Collapsed Expanded --------------
 .collapsed .header::before, .expanded .header::before {
-  top: 0px !important;
-  content: "\f0bf" !important;
-  line-height: 8px !important;
-  font-size: 15px !important;
-  color: #757575;
-  transform: rotate(90deg);
+    top:         0px !important;
+    content:     "\f0bf" !important;
+    line-height: 8px !important;
+    font-size:   15px !important;
+    color:       #757575;
+    transform:   rotate(90deg);
 }
 
 .collapsed .header::before { transform: rotate(0deg); }
@@ -95,23 +95,23 @@
 
 // Tab-bar inside tree-view --------------
 .left {
-  .tab {
-    border-bottom: 1px solid @ui-border;
-    background-color: @tree-view-background-color !important;
+    .tab {
+        border-bottom:    1px solid @ui-border;
+        background-color: @tree-view-background-color !important;
 
-    .title {
-      text-align: left !important;
-      margin: 0 4px;
-      line-height: 25px;
-      &::before {
-        content: "\f0c8";
-        font-family: 'Octicons Regular';
-        font-size: 16px !important;
-        position: relative;
-        top: 2px;
-        margin: 0 5px 0 0 !important;
-        color: lighten(#4A4D4B, 45%);
-      }
+        .title {
+            text-align:  left !important;
+            margin:      0 4px;
+            line-height: 25px;
+            &::before {
+                content:     "\f0c8";
+                font-family: 'Octicons Regular';
+                font-size:   16px !important;
+                position:    relative;
+                top:         2px;
+                margin:      0 5px 0 0 !important;
+                color:       lighten(#4A4D4B, 45%);
+            }
+        }
     }
-  }
 }

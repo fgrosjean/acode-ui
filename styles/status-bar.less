@@ -1,61 +1,55 @@
-
 @status-bar-height: @ui-tab-height;
 @status-bar-padding: @ui-padding;
 
 .status-bar {
-  font-size: @ui-size;
-  height: @status-bar-height;
-  line-height: @status-bar-height;
-  background-color: @ui-bg;
+    font-size:        @ui-size;
+    height:           @status-bar-height;
+    line-height:      @status-bar-height;
+    background-color: @ui-bg;
 
-  .flexbox-repaint-hack {
-    padding: 0 @status-bar-padding/2;
-  }
+    .flexbox-repaint-hack { padding: 0 @status-bar-padding/2; }
 
-  .inline-block {
-    vertical-align: top;
-    margin: 0 !important;
-  }
-
-  .status-bar-right {
-    .icon {
-      margin-right: @status-bar-padding/8;
+    .inline-block {
+        vertical-align: top;
+        margin: 0 !important;
     }
-  }
 
-  .icon::before {
-    font-size: 16px;
-  	width: 16px;
-    height: 16px;
-    position: relative;
-    top: 2px;
-  }
-
-  .status-bar-right > .inline-block {
-    border-left: 1px solid @ui-borderLight;
-    padding: 0 @status-bar-padding;
-  }
-
-  .status-bar-left > .inline-block {
-    border-right: 1px solid @ui-borderLight;
-    padding: 0 @status-bar-padding;
-  }
-
-  .github-StatusBarTileController {
-    padding: 0 @status-bar-padding/2 0 @status-bar-padding;
-    border-left: 1px solid #D1D1D1;
-  }
-
-  .github-PushPull{
-    border-left: 1px solid #D1D1D1;
-    border-right: 1px solid #D1D1D1;
-    margin: 0 15px !important;
-    padding: 0 7px;
-    color: #525252;
-    .icon-arrow-down {
-      margin-right: -8px !important;
-      margin-top: 2px !important;
+    .status-bar-right {
+        .icon { margin-right: @status-bar-padding/8; }
     }
-  }
 
+    .icon::before {
+        font-size: 16px;
+        width:     16px;
+        height:    16px;
+        position:  relative;
+        top:       2px;
+    }
+
+    .status-bar-right > .inline-block {
+        border-left: 1px solid @ui-borderLight;
+        padding:     0 @status-bar-padding;
+    }
+
+    .status-bar-left > .inline-block {
+        border-right: 1px solid @ui-borderLight;
+        padding:      0 @status-bar-padding;
+    }
+
+    .github-StatusBarTileController {
+        padding:     0 @status-bar-padding/2 0 @status-bar-padding;
+        border-left: 1px solid #D1D1D1;
+    }
+
+    .github-PushPull{
+        border-left:  1px solid #D1D1D1;
+        border-right: 1px solid #D1D1D1;
+        margin:       0 15px !important;
+        padding:      0 7px;
+        color:        #525252;
+        .icon-arrow-down {
+            margin-right: -8px !important;
+            margin-top:   2px !important;
+        }
+    }
 }

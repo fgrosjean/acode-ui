@@ -1,18 +1,15 @@
 .is-blurred * {
-  .title-bar, .tree-view , .tab-bar, .tab:not(.active) {
-    color: #999;
-    background: #F6F6F6 !important;
-    transition: all 0 !important;
-  }
-  .tree-view ol li ol li::after {
-    background: none !important;
-  }
-  .tree-view .selected:before {
-    background-color: #ddd;
-  }
-  .atom-dock-inner .atom-dock-toggle-button.left {
-    .atom-dock-toggle-button-inner {
-      background-color: #F6F6F6;
+    .title-bar, .tree-view , .tab-bar, .tab:not(.active) {
+        color:      #999;
+        background: #F6F6F6 !important;
+        transition: all 0 !important;
     }
-  }
+
+    .tree-view ol li ol li::after { background: none !important; }
+
+    .tree-view .selected:before { background-color: #ddd; }
+
+    .atom-dock-inner .atom-dock-toggle-button.left {
+        .atom-dock-toggle-button-inner { background-color: #F6F6F6; }
+    }
 }

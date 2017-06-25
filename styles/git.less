@@ -5,61 +5,43 @@
 .status-removed  { .text(error); }   // red
 .status-renamed  { .text(info); }    // blue
 
-.icon-list-unordered::before, .icon-tasklist::before {
-  margin-top: -2px;
-}
-.icon-move-down::before {
-  margin-top: 4px;
-}
+.icon-list-unordered::before, .icon-tasklist::before { margin-top: -2px; }
+.icon-move-down::before { margin-top: 4px; }
 .is-selected {
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 21px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height:            21px;
 }
 
 .github-FilePatchListView-item {
-  padding-left: 10px;
-  height: 28px;
-  line-height: 17px;
+    padding-left: 10px;
+    height:       28px;
+    line-height:  17px;
 }
 
 .github-FilePatchView {
-  .icon-move-down::before {
-    margin: 0;
-  }
+    .icon-move-down::before { margin: 0; }
 }
 
-.github-FilePatchListView-icon::before {
-  margin-top: 1px;
-}
+.github-FilePatchListView-icon::before { margin-top: 1px; }
 
 atom-text-editor {
-  .gutter .line-number {
-    &.git-line-modified {
-      border-left: 1px solid @syntax-color-modified;
+    .gutter .line-number {
+        &.git-line-modified { border-left: 1px solid @syntax-color-modified; }
+        &.git-line-added { border-left: 1px solid @syntax-color-added; }
     }
-
-    &.git-line-added {
-      border-left: 1px solid @syntax-color-added;
-    }
-
-  }
 }
 .github-StatusBarTileController-tooltipMenu {
-  .tooltip-inner {
-    border-radius: 4px !important;
-    background-color: #E6E6E6 !important;
-    .btn .icon::before {
-      position: relative;
-      top: 2px !important;
+    .tooltip-inner {
+        border-radius:    4px !important;
+        background-color: #E6E6E6 !important;
+        .btn .icon::before {
+            position: relative;
+            top:      2px !important;
+        }
     }
-  }
-  .tooltip-arrow {
-    background-color: #E6E6E6 !important;
-  }
+    .tooltip-arrow { background-color: #E6E6E6 !important; }
 }
 
 .github-CommitView {
-  .scroll-view {
-    padding: 0 3px !important;
-  }
+    .scroll-view { padding: 0 3px !important; }
 }

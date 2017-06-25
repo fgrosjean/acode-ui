@@ -1,234 +1,203 @@
-
 @modal-padding: @ui-padding/3 @ui-padding/1.5;
 @modal-width: @ui-size * 50;
 
 atom-panel-container.modal {
-  position: absolute;
-  top: 0; left: 0; right: 0;
+    position: absolute;
+    top: 0; left: 0; right: 0;
 }
 
 atom-panel.modal {
-  position: relative;
-  width: 100%;
-  max-width: @modal-width;
-  margin: 0 auto;
-  left: initial;
-  color: @text-color;
-  background-color: #E7E7E7;
-  padding: 0;
-  border-radius: 10px !important;
-  box-shadow: inset 0 0px 1px 0px rgba(0, 0, 0, 0.3), 0 40px 60px 1px rgba(0, 0, 0, 0.2), 0 20px 50px 0px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  border: 0;
+    position:         relative;
+    width:            100%;
+    max-width:        @modal-width;
+    margin:           0 auto;
+    left:             initial;
+    color:            @text-color;
+    background-color: #E7E7E7;
+    padding:          0;
+    border-radius:    10px !important;
+    box-shadow:       inset 0 0px 1px 0px rgba(0, 0, 0, 0.3), 0 40px 60px 1px rgba(0, 0, 0, 0.2), 0 20px 50px 0px rgba(0, 0, 0, 0.3);
+    overflow:         hidden;
+    border:           0;
 
-  .message {
-    margin-top: 5px;
-    padding: 10px 20px 15px 20px;
-  }
-
-  .selected .character-match {
-    color: #81B4E3 !important;
-    font-weight: normal !important;
-  }
-  .character-match {
-    color: #1A80EA !important;
-    font-weight: normal !important;
-  }
-
-  &.from-top {
-    top: 71px;
-  }
-
-  atom-text-editor[mini] {
-      overflow: hidden;
-      background-color: transparent;
-      margin: 0;
-      padding: 0 0 0 50px;
-      display: block;
-      height: 56px !important;
-      max-height: 100%;
-      border: 0;
-      border-bottom: 1px solid #D1D1D1;
-      border-radius: 0;
-      font-weight: 100;
-      color: #000;
-      .cursor {
-        top: -7px
-      }
-      .cursor, .region {
-        height: 56px !important;
-      }
-      .editor-contents--private {
-        padding: 10px;
-        height: 56px !important;
-        font-size: 26px;
-        line-height: 36px;
-        letter-spacing: -0.2px;
-        font-family: @font-family;
-      }
-      &.is-focused {
-        box-shadow: none;
-      }
-      &::before {
-        font-family: 'Octicons Regular';
-        font-size: 25px;
-        top: 15px;
-        left: 17px;
-        position: absolute;
-        content: "\f02e";
-        color: #727272;
-      }
+    .message {
+        margin-top: 5px;
+        padding:    10px 20px 15px 20px;
     }
 
-  .select-list ol.list-group,
-  &.select-list ol.list-group {
-    background-color: transparent;
-    margin: 0;
-
-    &:empty {
-      border: none;
-      margin-top: 0;
+    .selected .character-match {
+        color:       #81B4E3 !important;
+        font-weight: normal !important;
+    }
+    .character-match {
+        color:       #1A80EA !important;
+        font-weight: normal !important;
     }
 
-    li {
-      padding: @modal-padding;
-      line-height: @ui-line-height;
-      border-bottom: 1px solid #DADADA;
-      position: relative;
+    &.from-top { top: 71px; }
 
-      &:last-of-type {
-        border-bottom: none;
-      }
+    atom-text-editor[mini] {
+        overflow:         hidden;
+        background-color: transparent;
+        margin:           0;
+        padding:          0 0 0 50px;
+        display:          block;
+        height:           56px !important;
+        max-height:       100%;
+        border:           0;
+        border-bottom:    1px solid #D1D1D1;
+        border-radius:    0;
+        font-weight:      100;
+        color:            #000;
 
-      .icon::before {
-        margin-left: 1px;
-      }
+        .cursor { top: -7px }
 
-      .icon.status {
-        float: right;
-        margin-left: @ui-padding-icon;
-        &:before {
-          margin-left: 0;
-          margin-right: 0;
+        .cursor, .region { height: 56px !important; }
+
+        .editor-contents--private {
+            padding:        10px;
+            height:         56px !important;
+            font-size:      26px;
+            line-height:    36px;
+            letter-spacing: -0.2px;
+            font-family:    @font-family;
         }
-      }
-
-      &.selected {
-        .status.icon {
-          color: @text-color-selected;
+        &.is-focused {
+            box-shadow: none;
         }
-      }
-
-      &.two-lines {
-        padding: 10px 10px;
-        line-height: 16px;
-        .primary-line.icon::before {
-          font-size: 32px;
-          position: absolute;
-          top: 10px;
-          left: 17px;
-          text-align: center;
-          color: #B8B8B8;
-          width: 32px !important;
-          // border: 1px solid red;
-          height: 32px !important;
+        &::before {
+            font-family: 'Octicons Regular';
+            font-size: 25px;
+            top: 15px;
+            left: 17px;
+            position: absolute;
+            content: "\f02e";
+            color: #727272;
         }
-        .primary-line.icon {
-          margin-left: 50px;
+    }
+
+    .select-list ol.list-group,
+    &.select-list ol.list-group {
+        background-color: transparent;
+        margin:           0;
+
+        &:empty {
+            border:     none;
+            margin-top: 0;
         }
-        .secondary-line.no-icon {
-          margin-left: 28px;
+
+        li {
+            padding:       @modal-padding;
+            line-height:   @ui-line-height;
+            border-bottom: 1px solid #DADADA;
+            position:      relative;
+
+            &:last-of-type { border-bottom: none; }
+
+            .icon::before { margin-left: 1px; }
+
+            .icon.status {
+                float:       right;
+                margin-left: @ui-padding-icon;
+                &:before {
+                    margin-left:  0;
+                    margin-right: 0;
+                }
+            }
+
+            &.selected {
+                .status.icon { color: @text-color-selected; }
+            }
+
+            &.two-lines {
+                padding:     10px 10px;
+                line-height: 16px;
+                .primary-line.icon::before {
+                    font-size:  32px;
+                    position:   absolute;
+                    top:        10px;
+                    left:       17px;
+                    text-align: center;
+                    color:      #B8B8B8;
+                    width:      32px !important;
+                    height:     32px !important;
+                }
+                .primary-line.icon { margin-left: 50px; }
+                .secondary-line.no-icon { margin-left: 28px; }
+            }
         }
-      }
+
+        .selected .primary-line { overflow: visible; }
+        .selected .secondary-line { color: #F1EFF9; }
+        .selected .primary-line.icon::before {
+            position:     absolute !important;
+            left:         -43px !important;
+            top:          0px !important;
+            margin-right: 100px;
+            bottom:       40px;
+            color:        #F1EFF9 !important;
+        }
     }
 
-    .selected .primary-line {
-      overflow: visible;
+    .select-list {
+        > span {
+            padding: 10px;
+            display: block;
+        }
+        > div { padding: 10px 20px; }
     }
-    .selected .secondary-line {
-      color: #F1EFF9;
+
+    .select-list .key-binding {
+        margin-top:       0px;
+        margin-left:      @ui-padding/2;
+        margin-right:     calc( -@ui-padding/3 ~"+" 1px);
+        background-color: #fff;
+        padding-top:      1px;
+        color:            @text-color;
     }
-    .selected .primary-line.icon::before {
-      position: absolute !important;
-      left: -43px !important;
-      top: 0px !important;
-      margin-right: 100px;
-      bottom: 40px;
-      color: #F1EFF9 !important;
+
+    .select-list .primary-line { display: block; }
+
+    & > * { position: relative; }
+
+    // Container
+    &:before {
+        content:    "";
+        position:   absolute;
+        top:        0;
+        left:       0;
+        right:      0;
+        bottom:     0;
+        z-index:    0;
+        box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
     }
-  }
-
-  .select-list {
-    > span {
-      padding: 10px;
-      display: block;
-    }
-    > div {
-      padding: 10px 20px;
-    }
-  }
-
-  .select-list .key-binding {
-    margin-top: 0px;
-    margin-left: @ui-padding/2;
-    margin-right: calc( -@ui-padding/3 ~"+" 1px);
-    background-color: #fff;
-    padding-top: 1px;
-    color: @text-color;
-  }
-
-  .select-list .primary-line {
-    display: block;
-  }
-
-  & > * {
-    position: relative; // fixes stacking order
-  }
-
-
-  // Container
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
-  }
-
 }
 
 .tree-view-dialog {
-  label {
-    border-bottom: 1px solid #DADADA;
-    display: inline-block;
-    padding: 10px;
-    margin-bottom: -5px;
-    width: 100%;
-  }
-  atom-text-editor[mini] {
-      padding: 0 0 0 0px !important;
-      &::before {
-        display: none;
-      }
+    label {
+        border-bottom: 1px solid #DADADA;
+        display:       inline-block;
+        padding:       10px;
+        margin-bottom: -5px;
+        width:         100%;
+    }
+    atom-text-editor[mini] {
+        padding: 0 0 0 0px !important;
+        &::before { display: none; }
     }
 }
 
 .modal {
-  label {
-    margin-bottom: -5px;
-    atom-text-editor[mini] {
-      border-top: 1px solid #DADADA !important;
-      margin-top: 10px !important;
-      padding: 10px !important;
-      .editor-contents--private {
-        padding: 0 !important;
-      }
-      &::before {
-        display: none;
-      }
+    label {
+        margin-bottom: -5px;
+        atom-text-editor[mini] {
+            border-top: 1px solid #DADADA !important;
+            margin-top: 10px !important;
+            padding:    10px !important;
+
+            .editor-contents--private { padding: 0 !important; }
+
+            &::before { display: none; }
+        }
     }
-  }
 }
