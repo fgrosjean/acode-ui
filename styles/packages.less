@@ -146,3 +146,119 @@
         border-color:     @level-3-color;
     }
 }
+
+// Color Picker ---------------------------
+.ColorPicker.view--definition {
+    height: 26px !important;
+
+    .ColorPicker-arrow { top: -10px; }
+    .ColorPicker-definition {
+        margin:        0;
+        height:        24px;
+        border-radius: 25px;
+        display:       flex;
+    }
+    .ColorPicker-definition-definition {
+        font-size:        10px;
+        font-family:      @font-family;
+        font-weight:      normal;
+        text-shadow:      none;
+        line-height:      13px;
+        color:            @text-color;
+        background-color: rgba(255, 255, 255, 0.4);
+        display:          inline !important;
+        width:            65%;
+        padding:          2px 0 1px 0;
+        margin:           0px auto;
+        top:              4px;
+        border-radius:    25px;
+        transform:        none !important;
+        transition:       all 0.3s;
+    }
+    .ColorPicker-definition-variable {display: none;}
+}
+
+.ColorPicker-definition::after, .ColorPicker-definition::before {
+    border-radius: 25px !important;
+}
+
+.ColorPicker:not(.view--definition) {
+    height:        286px !important;
+    border-radius: 10px;
+    box-shadow:    0 2px 8px 1px rgba(0, 0, 0, 0.3);
+
+    .ColorPicker-arrow {
+        top: -10px;
+        height: 5px !important;
+        width: 5px !important;
+    }
+    .ColorPicker-color-text { margin-top: 0px !important; }
+    .ColorPicker-color.is--returnVisible .ColorPicker-color-text { transform: translate(0, -20px); }
+
+    .ColorPicker-color-text, .ColorPicker-return-text {
+        font-size:        10px;
+        font-family:      @font-family;
+        font-weight:      normal;
+        text-shadow:      none;
+        line-height:      13px;
+        color:            @text-color;
+        background-color: rgba(255, 255, 255, 0.4);
+        display:          inline !important;
+        width:            50%;
+        padding:          2px 0 1px 0;
+        margin:           0px auto;
+        top:              16px;
+        border-radius:    25px;
+        transform:        none !important;
+        transition:       all 0.3s;
+        &:hover {
+            width: 55%;
+        }
+    }
+
+    .ColorPicker-color { height: 48px; margin-top: 0; border-radius: 5px 5px 0 0;}
+
+    .ColorPicker-return {
+        top:        50px;
+        height:     24px;
+        margin-top: 0;
+        box-shadow: none;
+        .ColorPicker-return-text { margin-top: -12px; }
+    }
+
+    .is--returnVisible {
+        .ColorPicker-color-text { top: 4px; }
+    }
+
+    .ColorPicker-body {
+        top:        48px;
+        box-shadow: none;
+        background: #E6E6E6;
+    }
+
+    .ColorPicker-body-saturation, .ColorPicker-body-alpha, .ColorPicker-body-hue {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .ColorPicker-format {
+        bottom:        0;
+        height:        24px;
+        background:    #9F9D9F;
+        border-radius: 0 0 5px 5px !important;
+        overflow:      hidden;
+
+        .ColorPicker-format-button {
+            color:       @text-color;
+            box-shadow:  none;
+            text-shadow: none;
+            line-height: 20px;
+            &:hover { background-color: #BBB9BB; }
+        }
+
+        .is--active {
+            background: #E6E6E6;
+            &:hover { background-color: #E6E6E6; }
+        }
+    }
+}
