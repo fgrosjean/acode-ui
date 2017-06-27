@@ -1,7 +1,7 @@
 {
   "name":        "acode-ui",
   "theme":       "ui",
-  "version":     "1.0.0",
+  "version":     "0.0.0",
   "description": "Xcode inspired theme for Atom.",
   "keywords":    [ "xcode", "macOS", "native", "apple" ],
   "repository":  "https://github.com/fgrosjean/acode-ui",
