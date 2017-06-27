@@ -1,4 +1,4 @@
-![Acode intro](https://raw.githubusercontent.com/fgrosjean/acode-ui/master/assets/icon-centered.jpg)
+![Acode intro](https://raw.githubusercontent.com/fgrosjean/acode-ui/master/assets/icon.jpg)
 # [Acode. Feels just like it should.](http://www.fernandogrosjean.com/lab/acode/)
 ### Xcode inspired theme for Atom.
 
