@@ -1,10 +1,17 @@
 {
-  "name":        "acode-ui",
-  "theme":       "ui",
-  "version":     "0.0.0",
+  "name": "acode-ui",
+  "theme": "ui",
+  "version": "0.1.0",
   "description": "Xcode inspired theme for Atom.",
-  "keywords":    [ "xcode", "macOS", "native", "apple" ],
-  "repository":  "https://github.com/fgrosjean/acode-ui",
-  "license":     "MIT",
-  "engines":     { "atom": ">=1.0.0 <2.0.0" }
+  "keywords": [
+    "xcode",
+    "macOS",
+    "native",
+    "apple"
+  ],
+  "repository": "https://github.com/fgrosjean/acode-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
