@@ -151,13 +151,17 @@
 .ColorPicker.view--definition {
     height: 26px !important;
 
+    &.is--flipped .ColorPicker-arrow { top: 24px !important; }
     .ColorPicker-arrow { top: -10px; }
+
     .ColorPicker-definition {
         margin:        0;
         height:        24px;
         border-radius: 25px;
         display:       flex;
     }
+
+    // &.is--flipped .ColorPicker-definition-definition { display: none !important;}
     .ColorPicker-definition-definition {
         font-size:        10px;
         font-family:      @font-family;
@@ -187,12 +191,14 @@
     border-radius: 10px;
     box-shadow:    0 2px 8px 1px rgba(0, 0, 0, 0.3);
 
+    &.is--flipped .ColorPicker-arrow { top: 286px !important; }
     .ColorPicker-arrow {
         top: -10px;
         height: 5px !important;
         width: 5px !important;
     }
     .ColorPicker-color-text { margin-top: 0px !important; }
+
     .ColorPicker-color.is--returnVisible .ColorPicker-color-text { transform: translate(0, -20px); }
 
     .ColorPicker-color-text, .ColorPicker-return-text {
@@ -216,8 +222,10 @@
         }
     }
 
-    .ColorPicker-color { height: 48px; margin-top: 0; border-radius: 5px 5px 0 0;}
+    &.is--flipped .ColorPicker-color {border-radius: 0 0 5px 5px;}
+    .ColorPicker-color { height: 48px; margin-top: 0; border-radius: 5px 5px 0 0; margin-bottom: 0}
 
+    &.is--flipped .ColorPicker-return { top: 212px }
     .ColorPicker-return {
         top:        50px;
         height:     24px;
@@ -226,10 +234,10 @@
         .ColorPicker-return-text { margin-top: -12px; }
     }
 
-    .is--returnVisible {
-        .ColorPicker-color-text { top: 4px; }
-    }
+    &.is--flipped .is--returnVisible { .ColorPicker-color-text { top: 28px; } }
+    .is--returnVisible { .ColorPicker-color-text { top: 4px; } }
 
+    &.is--flipped .ColorPicker-body { top: 24px; }
     .ColorPicker-body {
         top:        48px;
         box-shadow: none;
@@ -241,6 +249,7 @@
         box-shadow: none;
     }
 
+    &.is--flipped .ColorPicker-format { top: 0px; border-radius: 5px 5px 0 0 !important;}
     .ColorPicker-format {
         bottom:        0;
         height:        24px;
