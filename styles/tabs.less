@@ -44,7 +44,7 @@
         &:last-of-type { box-shadow: inset 0 -1px 0 #9F9D9F, 1px 0 0 #9F9D9F; }
         &.active:last-of-type { box-shadow: 1px 0 0 #9F9D9F; }
         &:hover {background-color: #b0afb0;}
-        
+
         // Title ----------------------
         .title {
             text-align: center;
@@ -75,7 +75,7 @@
             transform:        scale(0);
             transition:       transform .08s;
 
-            &:hover { background-color: #a1a0a1; }
+            &:hover { background-color: rgba(0, 0, 0, 0.2); }
 
             &:active { background-color: #D8D6D8; }
 
@@ -94,9 +94,10 @@
         &:hover .close-icon {
             transform:           scale(1);
             transition-duration: .16s;
+            width: 1.51em
         }
 
-        &.active .close-icon:hover { background-color: @ui-borderLight; }
+        &.active .close-icon:hover { background-color: fade(contrast(@ui-syntax-color), 20%);  }
     }
 
 

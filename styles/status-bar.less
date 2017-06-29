@@ -7,7 +7,7 @@
     line-height:      @status-bar-height;
     background-color: @ui-bg;
 
-    .flexbox-repaint-hack { padding: 0 1px; }
+    .flexbox-repaint-hack { padding: 0 @status-bar-padding/20; }
 
     .inline-block {
         vertical-align: top;
@@ -26,14 +26,18 @@
         top:       2px;
     }
 
-    .status-bar-right > .inline-block {
+    .status-bar-right > * {
         border-left: 1px solid @ui-borderLight;
-        padding:     0 @status-bar-padding;
+        padding:      0 @status-bar-padding;
+        vertical-align: top;
+        margin: 0 !important;
     }
 
-    .status-bar-left > .inline-block {
+    .status-bar-left > * {
         border-right: 1px solid @ui-borderLight;
         padding:      0 @status-bar-padding;
+        vertical-align: top;
+        margin: 0 !important;
     }
 
     .github-StatusBarTileController {

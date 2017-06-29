@@ -49,6 +49,7 @@ atom-panel.modal {
         border-radius:    0;
         font-weight:      100;
         color:            #000;
+        position: relative;
 
         .cursor { top: -7px }
 
@@ -189,7 +190,12 @@ atom-panel.modal {
 
 .modal {
     label {
-        margin-bottom: -5px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        margin: 0;
+        &::before {position: relative; top: 2px;}
         atom-text-editor[mini] {
             border-top: 1px solid #DADADA !important;
             margin-top: 10px !important;
