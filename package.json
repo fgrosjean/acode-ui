@@ -2,7 +2,7 @@
   "name": "acode-ui",
   "main": "./lib/acode-vibrancy",
   "theme": "ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Xcode inspired theme for Atom.",
   "keywords": [
     "xcode",
